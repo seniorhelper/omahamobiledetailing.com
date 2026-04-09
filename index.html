@@ -74,17 +74,66 @@ nav a:hover { color: var(--cyan); }
 }
 
 /* ── SALE BANNER ── */
-.sale-banner {
-  background: linear-gradient(90deg, var(--gold) 0%, #ffaa00 50%, var(--gold) 100%);
-  text-align: center; padding: 12px 20px;
-  font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.1rem;
-  color: var(--navy); letter-spacing: 1px;
-  border-bottom: 3px solid var(--navy);
-  animation: shimmer 3s infinite;
-  background-size: 200% auto;
+.owner-callout {
+  background: linear-gradient(135deg, #1a0000 0%, #2a0a0a 50%, #1a0000 100%);
+  border-top: 4px solid #ffd700;
+  border-bottom: 4px solid #ffd700;
+  padding: 0;
 }
-@keyframes shimmer { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
-.sale-banner a { color: var(--navy); font-weight: 900; text-decoration: underline; }
+.owner-callout-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; gap: 20px;
+  padding: 18px 28px; flex-wrap: wrap;
+}
+.owner-callout-icon {
+  font-size: 2.2rem; flex-shrink: 0;
+  animation: bounce 1.4s ease-in-out infinite;
+}
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+.owner-callout-text {
+  flex: 1; min-width: 240px;
+  font-family: 'Barlow', sans-serif;
+}
+.owner-callout-text strong {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  color: #ffd700;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  text-shadow: 0 0 20px rgba(255,215,0,.4);
+}
+.owner-callout-text span {
+  color: rgba(255,255,255,.88);
+  font-size: clamp(.82rem, 1.8vw, .97rem);
+  line-height: 1.5;
+}
+.owner-callout-text em { color: #ffd700; font-style: normal; font-weight: 700; }
+.owner-callout-btn {
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, #e63946, #c1121f);
+  color: #fff !important;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900; font-size: 1.05rem; letter-spacing: 1.5px;
+  text-transform: uppercase; text-decoration: none;
+  padding: 14px 26px; border-radius: 6px;
+  box-shadow: 0 0 20px rgba(230,57,70,.6), 0 4px 16px rgba(0,0,0,.4);
+  transition: all .2s;
+  white-space: nowrap;
+  animation: pulse-red 2s ease-in-out infinite;
+}
+@keyframes pulse-red {
+  0%,100%{box-shadow:0 0 20px rgba(230,57,70,.6),0 4px 16px rgba(0,0,0,.4)}
+  50%{box-shadow:0 0 36px rgba(230,57,70,.95),0 6px 24px rgba(0,0,0,.5)}
+}
+.owner-callout-btn:hover { background: linear-gradient(135deg, #ff4d5a, #e63946); transform: scale(1.04); }
+.owner-callout-arrows {
+  color: #ffd700; font-size: 1.4rem; flex-shrink: 0;
+  animation: nudge 1s ease-in-out infinite;
+  display: flex; gap: 2px;
+}
+@keyframes nudge { 0%,100%{transform:translateX(0)} 50%{transform:translateX(5px)} }
 
 /* ── HERO ── */
 .hero {
@@ -413,7 +462,8 @@ footer {
       <strong>Own a Mobile Detailing Business in Omaha?</strong>
       <span>This website — <em>omahamobiledetailing.com</em> — is a premium, SEO &amp; AI-optimized keyword URL that ranks for the searches your customers are already making. It could be yours for just <strong>$99/month</strong>. Packed with local SEO, AIO content, schema markup, and conversion tools — so new customers find <em>you</em> first on Google and AI search.</span>
     </div>
-    <a href="mailto:info@eyetoad.com" class="owner-callout-btn">Claim This Site →</a>
+    <div class="owner-callout-arrows">▶▶▶</div>
+    <a href="tel:18004818638" class="owner-callout-btn">📞 Call 1-800-481-8638 →</a>
   </div>
 </div>
 
