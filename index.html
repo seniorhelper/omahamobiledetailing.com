@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omaha Mobile Detailing | Auto Detailing That Comes to You</title>
+<meta name="description" content="Omaha's premier mobile auto detailing service. We come to your home or office — no drop-off needed. Book online today for a free quote!">
+<meta name="keywords" content="omaha mobile detailing, mobile car detailing omaha ne, auto detailing omaha, car detailing omaha nebraska, mobile detailing near me omaha, full detail omaha, ceramic coating omaha, paint correction omaha">
+<link rel="canonical" href="https://omahamobiledetailing.com/">
+<meta property="og:title" content="Omaha Mobile Detailing | Auto Detailing That Comes to You">
+<meta property="og:description" content="Omaha's premier mobile auto detailing service. We come to your home or office — no drop-off needed.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://omahamobiledetailing.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="GEnuQr81iixCYLpo8CBGuSl96hjElcH3fvKfC9CLug0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23001f4d'/%3E%3Cellipse cx='32' cy='38' rx='22' ry='10' fill='%2300d4ff' opacity='.3'/%3E%3Crect x='8' y='28' width='48' height='16' rx='8' fill='%2300d4ff'/%3E%3Crect x='14' y='22' width='36' height='14' rx='6' fill='%230099cc'/%3E%3Ccircle cx='18' cy='44' r='5' fill='%23222'/%3E%3Ccircle cx='46' cy='44' r='5' fill='%23222'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #001f4d;
+  --navy2: #002d6e;
+  --cyan: #00d4ff;
+  --cyan2: #00a8cc;
+  --gold: #ffd700;
+  --white: #ffffff;
+  --offwhite: #f4f8fc;
+  --text: #1a1a2e;
+  --muted: #5a6a80;
+  --red: #e63946;
+  --green: #2ec4b6;
+  --radius: 12px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Barlow', sans-serif; color: var(--text); background: #fff; overflow-x: hidden; }
+
+/* ── HEADER ── */
+header {
+  position: sticky; top: 0; z-index: 999;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 28px; height: 72px;
+  box-shadow: 0 2px 20px rgba(0,212,255,.15);
+  border-bottom: 3px solid var(--cyan);
+}
+.logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo-svg-inline { width: 44px; height: 44px; }
+.logo-text { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--white); letter-spacing: 2px; line-height: 1; }
+.logo-text span { color: var(--cyan); }
+nav { display: flex; gap: 28px; }
+nav a { color: rgba(255,255,255,.85); text-decoration: none; font-weight: 600; font-size: .9rem; letter-spacing: 1px; text-transform: uppercase; transition: color .2s; }
+nav a:hover { color: var(--cyan); }
+.header-phone { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--gold); text-decoration: none; letter-spacing: 1px; }
+.hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
+.hamburger span { display: block; width: 26px; height: 3px; background: var(--white); border-radius: 2px; }
+.mobile-nav { display: none; flex-direction: column; background: var(--navy2); padding: 16px 28px; gap: 14px; }
+.mobile-nav a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 1rem; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+@media(max-width:768px){
+  nav { display: none; }
+  .hamburger { display: flex; }
+  .mobile-nav.open { display: flex; }
+  header { height: 64px; }
+}
+
+/* ── SALE BANNER ── */
+.sale-banner {
+  background: linear-gradient(90deg, var(--gold) 0%, #ffaa00 50%, var(--gold) 100%);
+  text-align: center; padding: 12px 20px;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.1rem;
+  color: var(--navy); letter-spacing: 1px;
+  border-bottom: 3px solid var(--navy);
+  animation: shimmer 3s infinite;
+  background-size: 200% auto;
+}
+@keyframes shimmer { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+.sale-banner a { color: var(--navy); font-weight: 900; text-decoration: underline; }
+
+/* ── HERO ── */
+.hero {
+  position: relative; overflow: hidden;
+  min-height: 88vh;
+  background: linear-gradient(135deg, #001433 0%, #002d6e 40%, #003d8a 70%, #001a4d 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-bg-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,212,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridMove 20s linear infinite;
+}
+@keyframes gridMove { from{background-position:0 0} to{background-position:60px 60px} }
+.hero-glow {
+  position: absolute; width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(0,212,255,.2) 0%, transparent 70%);
+  top: -100px; right: -100px; pointer-events: none;
+  animation: pulse 4s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{transform:scale(1);opacity:.8} 50%{transform:scale(1.1);opacity:1} }
+.hero-content {
+  position: relative; z-index: 2; max-width: 780px; text-align: center; padding: 60px 24px;
+  animation: fadeUp .8s ease both;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+.hero-badge {
+  display: inline-block;
+  background: rgba(0,212,255,.15); border: 1px solid rgba(0,212,255,.4);
+  color: var(--cyan); font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+  font-size: .9rem; letter-spacing: 2px; text-transform: uppercase;
+  padding: 6px 18px; border-radius: 30px; margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.2rem, 8vw, 6.5rem);
+  color: var(--white); line-height: 1; letter-spacing: 3px; margin-bottom: 8px;
+}
+.hero h1 span { color: var(--cyan); }
+.hero-sub {
+  font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 700; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.hero p {
+  color: rgba(255,255,255,.85); font-size: 1.15rem; line-height: 1.7;
+  max-width: 600px; margin: 0 auto 36px;
+}
+.hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--cyan); color: var(--navy); font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900; font-size: 1.15rem; letter-spacing: 2px; text-transform: uppercase;
+  padding: 16px 36px; border-radius: 6px; text-decoration: none; border: none; cursor: pointer;
+  transition: all .2s; box-shadow: 0 0 24px rgba(0,212,255,.5);
+}
+.btn-primary:hover { background: #00f0ff; transform: translateY(-2px); box-shadow: 0 6px 32px rgba(0,212,255,.7); }
+.btn-outline {
+  background: transparent; border: 2px solid var(--gold); color: var(--gold);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.15rem;
+  letter-spacing: 2px; text-transform: uppercase; padding: 14px 36px; border-radius: 6px;
+  text-decoration: none; transition: all .2s;
+}
+.btn-outline:hover { background: var(--gold); color: var(--navy); transform: translateY(-2px); }
+.hero-car-svg { margin: 50px auto 0; max-width: 560px; width: 100%; }
+
+/* ── TRUST BAR ── */
+.trust-bar {
+  background: var(--navy2);
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 0;
+  border-top: 3px solid var(--cyan); border-bottom: 3px solid var(--cyan);
+}
+.trust-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 18px 32px; color: var(--white); font-weight: 600; font-size: .95rem;
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.trust-item:last-child { border-right: none; }
+.trust-icon { font-size: 1.6rem; }
+
+/* ── SECTIONS ── */
+section { padding: 80px 24px; }
+.container { max-width: 1100px; margin: 0 auto; }
+.section-label {
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+  letter-spacing: 3px; text-transform: uppercase; font-size: .85rem;
+  color: var(--cyan2); margin-bottom: 8px;
+}
+.section-title {
+  font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 5vw, 3.2rem);
+  color: var(--navy); letter-spacing: 2px; margin-bottom: 16px;
+}
+.section-title.light { color: var(--white); }
+.section-sub { color: var(--muted); font-size: 1.1rem; line-height: 1.7; max-width: 640px; }
+
+/* ── SERVICES ── */
+.services-bg { background: var(--offwhite); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+.service-card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 32px 28px; border: 1px solid #e0eaf5;
+  box-shadow: 0 4px 24px rgba(0,45,110,.06);
+  transition: all .3s; position: relative; overflow: hidden;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--cyan), var(--navy));
+}
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,45,110,.12); }
+.service-icon { font-size: 2.4rem; margin-bottom: 14px; }
+.service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+.service-card p { color: var(--muted); font-size: .95rem; line-height: 1.6; margin-bottom: 14px; }
+.service-price { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.3rem; color: var(--cyan2); }
+
+/* ── HOW IT WORKS ── */
+.hiw-bg { background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%); }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 52px; }
+.step { text-align: center; }
+.step-num {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--cyan), var(--cyan2));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--navy);
+  margin: 0 auto 20px; box-shadow: 0 0 24px rgba(0,212,255,.4);
+}
+.step h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.25rem; color: var(--white); margin-bottom: 8px; }
+.step p { color: rgba(255,255,255,.75); font-size: .95rem; line-height: 1.6; }
+
+/* ── TOOLS / UNIQUE SECTION ── */
+.tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
+.tool-card {
+  background: linear-gradient(135deg, var(--navy) 0%, #003580 100%);
+  border-radius: var(--radius); padding: 28px 24px;
+  border: 1px solid rgba(0,212,255,.25);
+  box-shadow: 0 4px 24px rgba(0,0,0,.15);
+  transition: all .3s;
+}
+.tool-card:hover { border-color: var(--cyan); transform: translateY(-4px); }
+.tool-card h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--cyan); margin-bottom: 10px; }
+.tool-card p { color: rgba(255,255,255,.8); font-size: .92rem; line-height: 1.6; }
+.tool-label {
+  display: inline-block; background: var(--cyan); color: var(--navy);
+  font-size: .7rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 20px; margin-bottom: 10px;
+}
+
+/* ── MAP ── */
+.map-section { background: var(--offwhite); }
+.omaha-map-wrap { margin-top: 40px; border-radius: var(--radius); overflow: hidden; border: 3px solid var(--navy); box-shadow: 0 8px 40px rgba(0,29,77,.15); }
+
+/* ── STATS ── */
+.stats-bar {
+  background: linear-gradient(90deg, var(--navy) 0%, var(--navy2) 100%);
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 0;
+}
+.stat { padding: 40px 48px; text-align: center; border-right: 1px solid rgba(255,255,255,.1); }
+.stat:last-child { border-right: none; }
+.stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--cyan); letter-spacing: 2px; line-height: 1; }
+.stat-label { color: rgba(255,255,255,.7); font-size: .9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-top: 4px; }
+
+/* ── CONTENT SECTION ── */
+.content-block { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.content-block.flip { direction: rtl; }
+.content-block.flip > * { direction: ltr; }
+.content-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--navy); margin-bottom: 16px; letter-spacing: 1px; }
+.content-text p { color: var(--muted); line-height: 1.8; font-size: 1rem; margin-bottom: 14px; }
+.content-text ul { color: var(--muted); line-height: 1.8; font-size: 1rem; padding-left: 20px; }
+.content-text li { margin-bottom: 8px; }
+.content-text li::marker { color: var(--cyan2); }
+@media(max-width:768px){
+  .content-block, .content-block.flip { grid-template-columns: 1fr; direction: ltr; }
+}
+
+/* ── FAQ ── */
+.faq-bg { background: var(--offwhite); }
+.faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 12px; max-width: 820px; }
+.faq-item { background: var(--white); border-radius: var(--radius); border: 1px solid #dde8f5; overflow: hidden; }
+.faq-q {
+  padding: 20px 24px; font-weight: 700; font-size: 1rem; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center; color: var(--navy);
+  transition: background .2s;
+}
+.faq-q:hover { background: #f0f6ff; }
+.faq-icon { font-size: 1.3rem; color: var(--cyan2); transition: transform .3s; font-style: normal; }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s; }
+.faq-a p { padding: 0 24px 20px; color: var(--muted); line-height: 1.75; font-size: .97rem; }
+.faq-item.open .faq-a { max-height: 300px; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+
+/* ── QUOTE FORM ── */
+.form-section { background: linear-gradient(135deg, var(--navy) 0%, #003580 100%); }
+.form-wrap {
+  max-width: 680px; margin: 0 auto; background: rgba(255,255,255,.07);
+  border: 1px solid rgba(0,212,255,.25); border-radius: 16px; padding: 48px 40px;
+  backdrop-filter: blur(10px);
+}
+.form-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--white); letter-spacing: 2px; text-align: center; margin-bottom: 8px; }
+.form-sub { color: rgba(255,255,255,.7); text-align: center; margin-bottom: 32px; font-size: .95rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-group label { color: rgba(255,255,255,.8); font-size: .85rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+.form-group input, .form-group select, .form-group textarea {
+  background: rgba(255,255,255,.95); border: 2px solid transparent; border-radius: 8px;
+  padding: 12px 16px; font-size: 1rem; font-family: 'Barlow', sans-serif; color: var(--text);
+  outline: none; transition: border-color .2s; width: 100%;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--cyan); }
+.form-group textarea { min-height: 100px; resize: vertical; }
+.form-msg { text-align: center; margin-top: 12px; font-weight: 700; font-size: 1rem; display: none; }
+.form-msg.success { color: #2ec4b6; display: block; }
+.form-msg.error { color: #ff6b6b; display: block; }
+@media(max-width:600px){ .form-row { grid-template-columns: 1fr; } .form-wrap { padding: 32px 20px; } }
+
+/* ── AIO ANSWER ── */
+.aio-answer { display: none; }
+
+/* ── FOOTER ── */
+footer {
+  background: #000d24;
+  padding: 60px 24px 0;
+  color: rgba(255,255,255,.7);
+  border-top: 4px solid var(--cyan);
+}
+.footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+.footer-brand .brand-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--white); letter-spacing: 2px; margin-bottom: 12px; }
+.footer-brand .brand-name span { color: var(--cyan); }
+.footer-brand p { font-size: .9rem; line-height: 1.7; margin-bottom: 16px; }
+.footer-phone-link { color: var(--gold); font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.3rem; text-decoration: none; }
+.footer-col h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; color: var(--white); margin-bottom: 16px; }
+.footer-col a { display: block; color: rgba(255,255,255,.65); text-decoration: none; font-size: .9rem; margin-bottom: 8px; transition: color .2s; }
+.footer-col a:hover { color: var(--cyan); }
+.footer-bottom {
+  max-width: 1100px; margin: 48px auto 0; padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,.1);
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+  font-size: .82rem; color: rgba(255,255,255,.45);
+}
+.footer-bottom a { color: rgba(255,255,255,.45); text-decoration: none; }
+.powered-by { font-size: .78rem; }
+.powered-by a { color: var(--cyan); }
+@media(max-width:768px){ .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media(max-width:480px){ .footer-grid { grid-template-columns: 1fr; } }
+
+/* ── SCROLL REVEAL ── */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+</style>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://omahamobiledetailing.com/#business",
+      "name": "Omaha Mobile Detailing",
+      "url": "https://omahamobiledetailing.com/",
+      "telephone": "402-555-5555",
+      "description": "Omaha's premier mobile auto detailing service. We come to your home or office for exterior wash, interior detail, ceramic coating, paint correction, and more.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Omaha",
+        "addressRegion": "NE",
+        "postalCode": "68102",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.2565,
+        "longitude": -95.9345
+      },
+      "areaServed": [
+        "Omaha, NE", "Bellevue, NE", "Papillion, NE", "La Vista, NE",
+        "Ralston, NE", "Millard, NE", "Elkhorn, NE", "Council Bluffs, IA"
+      ],
+      "priceRange": "$$",
+      "openingHours": "Mo-Sa 07:00-19:00",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mobile Auto Detailing Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Basic Exterior Wash & Shine" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Interior Detail" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Complete Full Detail Package" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic Coating Application" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paint Correction" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Engine Bay Cleaning" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://omahamobiledetailing.com/#website",
+      "url": "https://omahamobiledetailing.com/",
+      "name": "Omaha Mobile Detailing",
+      "publisher": { "@id": "https://omahamobiledetailing.com/#business" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://omahamobiledetailing.com/#webpage",
+      "url": "https://omahamobiledetailing.com/",
+      "name": "Omaha Mobile Detailing | Auto Detailing That Comes to You",
+      "isPartOf": { "@id": "https://omahamobiledetailing.com/#website" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is mobile detailing?", "acceptedAnswer": { "@type": "Answer", "text": "Mobile detailing is a professional auto detailing service where the detailer travels directly to your location — home, office, or anywhere convenient — with all equipment needed to fully clean and restore your vehicle." } },
+        { "@type": "Question", "name": "Do I need water or electricity at my location?", "acceptedAnswer": { "@type": "Answer", "text": "No. Our mobile detailing unit is fully self-contained with its own water supply, power generator, and all supplies. All we need is a place to park." } },
+        { "@type": "Question", "name": "How much does mobile detailing cost in Omaha?", "acceptedAnswer": { "@type": "Answer", "text": "Pricing varies by vehicle size and service. Basic packages start around $99, full details start around $149–$199, and premium services like ceramic coating start at $499. Contact us for a free, no-obligation quote." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- SALE BANNER -->
+<div class="sale-banner">
+  🚗 OWN A DETAILING BUSINESS IN OMAHA? <strong>THIS WEBSITE COULD BE YOURS FOR JUST $99/MO</strong> — PACKED WITH SEO, AIO &amp; AI-READY CONTENT SO CUSTOMERS FIND YOU FIRST! <a href="#contact">CLAIM THIS SITE →</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <a href="/" class="logo-wrap">
+    <svg class="logo-svg-inline" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="22" fill="#002d6e"/>
+      <rect x="5" y="20" width="34" height="12" rx="6" fill="#00d4ff"/>
+      <rect x="9" y="14" width="26" height="11" rx="5" fill="#0099cc"/>
+      <circle cx="13" cy="32" r="4" fill="#001433"/>
+      <circle cx="31" cy="32" r="4" fill="#001433"/>
+      <circle cx="13" cy="32" r="2" fill="#555"/>
+      <circle cx="31" cy="32" r="2" fill="#555"/>
+      <rect x="26" y="16" width="5" height="6" rx="1" fill="#c8eeff" opacity=".7"/>
+    </svg>
+    <div class="logo-text">Omaha<br><span>Mobile Detail</span></div>
+  </a>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#areas">Service Area</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Get a Quote</a>
+  </nav>
+  <a href="tel:4025555555" class="header-phone">📞 402-555-5555</a>
+  <button class="hamburger" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div class="mobile-nav" id="mobNav">
+  <a href="#services">Services</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#areas">Service Area</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Get a Quote</a>
+  <a href="tel:4025555555" style="color:var(--gold)">📞 402-555-5555</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Omaha's #1 Mobile Detailing Service ✦</div>
+    <h1>Omaha<br><span>Mobile</span><br>Detailing</h1>
+    <div class="hero-sub">We Come to You — Home, Office, or Anywhere</div>
+    <p>Your car deserves a showroom finish — without the hassle of drop-offs or waiting rooms. Our fully-equipped mobile detailing unit comes directly to your door, anywhere in the Omaha metro. Book in minutes. Results that turn heads.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">🚀 Get My Free Quote</a>
+      <a href="tel:4025555555" class="btn-outline">📞 Call Now</a>
+    </div>
+    <!-- SVG CAR ILLUSTRATION -->
+    <svg class="hero-car-svg" viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg">
+      <!-- Road -->
+      <rect x="0" y="160" width="560" height="60" rx="4" fill="rgba(0,20,50,.6)"/>
+      <rect x="40" y="186" width="80" height="8" rx="4" fill="rgba(255,255,255,.15)"/>
+      <rect x="160" y="186" width="80" height="8" rx="4" fill="rgba(255,255,255,.15)"/>
+      <rect x="280" y="186" width="80" height="8" rx="4" fill="rgba(255,255,255,.15)"/>
+      <rect x="400" y="186" width="80" height="8" rx="4" fill="rgba(255,255,255,.15)"/>
+      <!-- Car body -->
+      <rect x="60" y="112" width="360" height="62" rx="12" fill="#0055aa"/>
+      <!-- Cabin -->
+      <path d="M160 112 C165 72, 240 56, 320 56 C380 56 400 72 408 112 Z" fill="#004299"/>
+      <!-- Windows -->
+      <path d="M180 108 C185 78, 235 66, 280 66 L280 108 Z" fill="#a8d8f0" opacity=".85"/>
+      <path d="M290 66 C330 66, 375 76, 388 108 L290 108 Z" fill="#a8d8f0" opacity=".85"/>
+      <line x1="282" y1="66" x2="282" y2="108" stroke="#003888" stroke-width="3"/>
+      <!-- Headlight -->
+      <ellipse cx="420" cy="140" rx="18" ry="10" fill="#ffd700" opacity=".9"/>
+      <ellipse cx="420" cy="140" rx="10" ry="6" fill="#fff" opacity=".8"/>
+      <!-- Taillight -->
+      <rect x="62" y="130" width="16" height="10" rx="3" fill="#e63946" opacity=".9"/>
+      <!-- Wheels -->
+      <circle cx="160" cy="172" r="28" fill="#111"/>
+      <circle cx="160" cy="172" r="18" fill="#333"/>
+      <circle cx="160" cy="172" r="10" fill="#555"/>
+      <circle cx="160" cy="172" r="4" fill="#aaa"/>
+      <circle cx="380" cy="172" r="28" fill="#111"/>
+      <circle cx="380" cy="172" r="18" fill="#333"/>
+      <circle cx="380" cy="172" r="10" fill="#555"/>
+      <circle cx="380" cy="172" r="4" fill="#aaa"/>
+      <!-- Door handle + line -->
+      <line x1="120" y1="140" x2="360" y2="140" stroke="rgba(0,212,255,.4)" stroke-width="1.5" stroke-dasharray="4,4"/>
+      <rect x="230" y="134" width="30" height="8" rx="4" fill="#00d4ff" opacity=".6"/>
+      <!-- Shine lines -->
+      <line x1="170" y1="70" x2="200" y2="80" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="215" y1="63" x2="240" y2="72" stroke="rgba(255,255,255,.2)" stroke-width="2" stroke-linecap="round"/>
+      <!-- Water spray effect -->
+      <g opacity=".6">
+        <line x1="450" y1="90" x2="470" y2="110" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+        <line x1="458" y1="84" x2="476" y2="104" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="466" y1="80" x2="482" y2="100" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="470" cy="112" r="3" fill="#00d4ff" opacity=".5"/>
+        <circle cx="478" cy="106" r="2" fill="#00d4ff" opacity=".4"/>
+        <circle cx="484" cy="102" r="2.5" fill="#00d4ff" opacity=".3"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="trust-icon">⭐</span> 5-Star Rated</div>
+  <div class="trust-item"><span class="trust-icon">🛡️</span> Fully Insured</div>
+  <div class="trust-item"><span class="trust-icon">💧</span> Self-Contained Unit</div>
+  <div class="trust-item"><span class="trust-icon">📍</span> Omaha Metro Wide</div>
+  <div class="trust-item"><span class="trust-icon">📅</span> 7 Days a Week</div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+  <div class="container">
+    <div class="section-label reveal">Our Services</div>
+    <h2 class="section-title reveal">Mobile Detailing Packages<br>That Fit Any Vehicle & Budget</h2>
+    <p class="section-sub reveal">From a quick exterior refresh to a full-day deep clean and ceramic coating, Omaha Mobile Detailing has a package built for your vehicle and your schedule. All services come to you — zero drop-off required.</p>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🚿</div>
+        <h3>Exterior Wash & Shine</h3>
+        <p>Hand wash, clay bar treatment, tire shine, window cleaning, and a deep spray wax that leaves your paint gleaming. Perfect for regular maintenance between full details.</p>
+        <div class="service-price">Starting at $99</div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🧹</div>
+        <h3>Full Interior Detail</h3>
+        <p>Deep vacuum, steam clean upholstery, leather conditioning, dashboard wipe-down, odor elimination, and spot-cleaning of all surfaces. Your cabin restored to fresh.</p>
+        <div class="service-price">Starting at $149</div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">✨</div>
+        <h3>Complete Full Detail</h3>
+        <p>Our most popular package combines a thorough exterior wash, paint decontamination, interior deep clean, and a spray sealant. Show-quality results, delivered to your door.</p>
+        <div class="service-price">Starting at $199</div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🛡️</div>
+        <h3>Ceramic Coating</h3>
+        <p>Professional-grade ceramic coating application protects your paint for years, repels water, resists UV damage and road grime. The last paint protection you'll ever need.</p>
+        <div class="service-price">Starting at $499</div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔧</div>
+        <h3>Paint Correction</h3>
+        <p>Eliminate swirl marks, light scratches, water spots, and oxidation with our multi-stage machine polishing service. Restore your paint's original depth and gloss.</p>
+        <div class="service-price">Starting at $299</div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">⚙️</div>
+        <h3>Engine Bay Cleaning</h3>
+        <p>Safe, low-pressure degreasing and detailing of your engine bay. Impress at car shows, simplify leak detection, and keep your engine running cooler and cleaner.</p>
+        <div class="service-price">Starting at $79</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Cars Detailed</div></div>
+  <div class="stat"><div class="stat-num">5★</div><div class="stat-label">Average Rating</div></div>
+  <div class="stat"><div class="stat-num">7</div><div class="stat-label">Days a Week</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Satisfaction</div></div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="hiw-bg" id="how-it-works">
+  <div class="container">
+    <div class="section-label reveal" style="color:var(--cyan)">Simple Process</div>
+    <h2 class="section-title light reveal">How Omaha Mobile Detailing Works</h2>
+    <p class="section-sub reveal" style="color:rgba(255,255,255,.75)">Four steps to a spotless vehicle — and you don't have to go anywhere. Mobile auto detailing in Omaha has never been this easy or this good.</p>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Request Your Quote</h3>
+        <p>Fill out our quick online form or call 402-555-5555. Tell us your vehicle type, desired service, and your preferred date and location.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>We Come to You</h3>
+        <p>Our fully self-contained mobile unit arrives at your home, office parking lot, or any convenient location in the Omaha metro on your schedule.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Professional Detailing</h3>
+        <p>Our certified detailers get to work using professional-grade products, tools, and proven techniques. No cutting corners — ever.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h3>Drive Away Gleaming</h3>
+        <p>Inspect your vehicle, sign off on the results, and enjoy a showroom-quality finish. We don't leave until you're 100% satisfied.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US / CONTENT -->
+<section>
+  <div class="container">
+    <div class="content-block reveal">
+      <div class="content-text">
+        <h2>Why Omaha Drivers Choose Mobile Detailing Over a Traditional Car Wash</h2>
+        <p>Traditional car washes use automated brush systems that can inflict micro-scratches on your paint and offer a fraction of the cleaning power that professional mobile detailing delivers. When you choose Omaha Mobile Detailing, you're getting a hand-crafted, personalized service using the highest-quality professional products on the market — applied by trained detailers who care about your vehicle as much as you do.</p>
+        <p>There are no appointments to drive across town for. There's no sitting in a waiting room. Your car gets detailed while you're at work, at home, or anywhere in the Omaha metro area that's convenient for you. Our mobile detailing unit carries its own water and power — meaning we are truly 100% self-sufficient and can set up anywhere.</p>
+        <ul>
+          <li>Hand-applied products — not automated brushes</li>
+          <li>Customized service for your vehicle's specific needs</li>
+          <li>No harsh chemicals that strip wax or damage trim</li>
+          <li>Professional-grade microfiber, dual-action polishers, and steam cleaners</li>
+          <li>Results that last weeks to months — not days</li>
+        </ul>
+      </div>
+      <div>
+        <!-- SVG COMPARISON GRAPHIC -->
+        <svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:12px;box-shadow:0 8px 40px rgba(0,29,77,.12)">
+          <rect width="400" height="360" fill="#f4f8fc" rx="12"/>
+          <rect x="20" y="20" width="168" height="320" rx="10" fill="#001f4d"/>
+          <rect x="212" y="20" width="168" height="320" rx="10" fill="#e8f4fd" stroke="#dde8f5" stroke-width="1"/>
+          <text x="104" y="56" text-anchor="middle" fill="#00d4ff" font-family="Bebas Neue,sans-serif" font-size="18" letter-spacing="1">MOBILE DETAIL</text>
+          <text x="296" y="56" text-anchor="middle" fill="#5a6a80" font-family="Bebas Neue,sans-serif" font-size="18" letter-spacing="1">CAR WASH</text>
+          <line x1="20" y1="66" x2="188" y2="66" stroke="rgba(0,212,255,.3)" stroke-width="1"/>
+          <line x1="212" y1="66" x2="380" y2="66" stroke="#dde8f5" stroke-width="1"/>
+          <!-- rows -->
+          <g font-family="Barlow,sans-serif" font-size="13">
+            <text x="104" y="98" text-anchor="middle" fill="#fff">✅ Hand Wash</text>
+            <text x="296" y="98" text-anchor="middle" fill="#5a6a80">❌ Automated Brushes</text>
+            <text x="104" y="134" text-anchor="middle" fill="#fff">✅ No Scratches</text>
+            <text x="296" y="134" text-anchor="middle" fill="#5a6a80">⚠️ Risk of Swirls</text>
+            <text x="104" y="170" text-anchor="middle" fill="#fff">✅ Comes to You</text>
+            <text x="296" y="170" text-anchor="middle" fill="#5a6a80">❌ Drive There</text>
+            <text x="104" y="206" text-anchor="middle" fill="#fff">✅ Interior Detail</text>
+            <text x="296" y="206" text-anchor="middle" fill="#5a6a80">❌ Exterior Only</text>
+            <text x="104" y="242" text-anchor="middle" fill="#fff">✅ Ceramic/Wax</text>
+            <text x="296" y="242" text-anchor="middle" fill="#5a6a80">⚠️ Basic Rinse Wax</text>
+            <text x="104" y="278" text-anchor="middle" fill="#fff">✅ Lasting Results</text>
+            <text x="296" y="278" text-anchor="middle" fill="#5a6a80">❌ Days, Not Weeks</text>
+            <text x="104" y="314" text-anchor="middle" fill="#00d4ff" font-weight="700">PRO RESULTS</text>
+            <text x="296" y="314" text-anchor="middle" fill="#5a6a80">Fast Rinse</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT MAKES US UNIQUE / TOOLS -->
+<section style="background:var(--navy)">
+  <div class="container">
+    <div class="section-label reveal" style="color:var(--cyan)">Competitive Edge</div>
+    <h2 class="section-title light reveal">Tools & Technologies That Set Us Apart</h2>
+    <p class="section-sub reveal" style="color:rgba(255,255,255,.7)">We invest in professional-grade equipment and ongoing training so your vehicle gets the absolute best treatment available in the Omaha mobile detailing market.</p>
+    <div class="tools-grid">
+      <div class="tool-card reveal">
+        <div class="tool-label">Pro Grade</div>
+        <h3>Dual-Action Machine Polisher</h3>
+        <p>We use Rupes and Flex dual-action polishers for paint correction and wax application — the same tools used by professional body shops and detailing studios nationwide.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-label">Deep Clean</div>
+        <h3>Commercial Steam Cleaning</h3>
+        <p>High-temperature steam sanitizes upholstery, vents, and hard-to-reach areas without harsh chemicals — killing bacteria and eliminating odors at the source.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-label">Protection</div>
+        <h3>Pro Ceramic Coating</h3>
+        <p>Our 9H-rated ceramic coatings bond to your clear coat at the molecular level, providing years of hydrophobic protection and unmatched gloss depth.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-label">Self-Contained</div>
+        <h3>100-Gallon Water Tank</h3>
+        <p>No hose hookup needed. Our rig carries its own fresh water supply and a generator, so we can detail your vehicle in any driveway, parking garage, or lot in Omaha.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-label">Accurate</div>
+        <h3>Paint Depth Gauge</h3>
+        <p>Before any polishing, we measure your paint thickness with a digital gauge to ensure we never remove more material than is safe — protecting your factory finish.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-label">Digital</div>
+        <h3>Online Booking & Invoicing</h3>
+        <p>Book online in under 2 minutes, get a digital invoice, and pay by card or contactless payment. No cash, no hassle — the modern way to schedule auto detailing in Omaha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT: ABOUT OMAHA DETAILING -->
+<section id="areas">
+  <div class="container">
+    <div class="content-block flip reveal">
+      <div class="content-text">
+        <h2>Serving the Entire Omaha Metro Area</h2>
+        <p>Whether you live in Midtown Omaha, Elkhorn, Millard, Papillion, La Vista, Bellevue, Ralston, or anywhere across Douglas and Sarpy Counties — our mobile detailing unit comes to you. We even serve customers across the river in Council Bluffs, Iowa.</p>
+        <p>Omaha drivers know how brutal Nebraska weather can be on a vehicle's exterior. Spring road salt residue, summer UV rays beating down, fall tree sap, and winter grime build up fast. Regular professional mobile detailing isn't just about looking good — it's about protecting your paint, preserving your resale value, and keeping your investment in top shape year-round.</p>
+        <p>Our service area includes ZIP codes across the entire Omaha metropolitan statistical area. If you're not sure whether we serve your address, just give us a call at 402-555-5555 — we almost certainly can reach you.</p>
+        <ul>
+          <li>Omaha (Downtown, Midtown, South, West, North)</li>
+          <li>Elkhorn, Millard, and the Far West side</li>
+          <li>Papillion, La Vista, and Sarpy County</li>
+          <li>Bellevue and Offutt AFB area</li>
+          <li>Ralston and surrounding Douglas County</li>
+          <li>Council Bluffs, Iowa metro</li>
+        </ul>
+      </div>
+      <!-- OMAHA SVG MAP -->
+      <div>
+        <div class="omaha-map-wrap">
+          <svg viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#e8f0fa">
+            <!-- Background -->
+            <rect width="420" height="360" fill="#dce8f5"/>
+            <!-- Missouri River (right side) -->
+            <path d="M340 0 C350 60, 365 120, 355 180 C345 240, 360 300, 350 360" stroke="#7ab3d8" stroke-width="18" fill="none" stroke-linecap="round" opacity=".7"/>
+            <text x="358" y="185" font-size="9" fill="#4a90b8" font-family="Barlow,sans-serif" transform="rotate(90,358,185)">Missouri River</text>
+            <!-- I-80 -->
+            <line x1="0" y1="200" x2="420" y2="200" stroke="#e63946" stroke-width="4" opacity=".6"/>
+            <text x="20" y="194" font-size="10" fill="#e63946" font-family="Barlow,sans-serif" font-weight="700">I-80</text>
+            <!-- I-680 -->
+            <path d="M80 0 C75 80, 70 160, 80 200" stroke="#ff8c00" stroke-width="3" fill="none" opacity=".6"/>
+            <text x="54" y="100" font-size="9" fill="#ff8c00" font-family="Barlow,sans-serif" font-weight="700" transform="rotate(-5,54,100)">I-680</text>
+            <!-- Neighborhoods -->
+            <!-- Downtown Omaha -->
+            <circle cx="270" cy="155" r="28" fill="#0055aa" opacity=".85"/>
+            <text x="270" y="150" text-anchor="middle" fill="#fff" font-size="9" font-family="Barlow,sans-serif" font-weight="700">DOWNTOWN</text>
+            <text x="270" y="163" text-anchor="middle" fill="#00d4ff" font-size="9" font-family="Barlow,sans-serif">OMAHA</text>
+            <!-- Midtown -->
+            <circle cx="215" cy="148" r="18" fill="#003d8a" opacity=".8"/>
+            <text x="215" y="152" text-anchor="middle" fill="#fff" font-size="8" font-family="Barlow,sans-serif">Midtown</text>
+            <!-- West Omaha -->
+            <circle cx="110" cy="155" r="22" fill="#003d8a" opacity=".75"/>
+            <text x="110" y="150" text-anchor="middle" fill="#fff" font-size="8" font-family="Barlow,sans-serif">West</text>
+            <text x="110" y="162" text-anchor="middle" fill="#00d4ff" font-size="8" font-family="Barlow,sans-serif">Omaha</text>
+            <!-- Elkhorn -->
+            <circle cx="55" cy="130" r="16" fill="#004a99" opacity=".7"/>
+            <text x="55" y="134" text-anchor="middle" fill="#fff" font-size="8" font-family="Barlow,sans-serif">Elkhorn</text>
+            <!-- Papillion -->
+            <circle cx="240" cy="248" r="18" fill="#004a99" opacity=".75"/>
+            <text x="240" y="252" text-anchor="middle" fill="#fff" font-size="8" font-family="Barlow,sans-serif">Papillion</text>
+            <!-- La Vista -->
+            <circle cx="190" cy="235" r="14" fill="#005ab5" opacity=".7"/>
+            <text x="190" y="239" text-anchor="middle" fill="#fff" font-size="7" font-family="Barlow,sans-serif">La Vista</text>
+            <!-- Bellevue -->
+            <circle cx="285" cy="265" r="20" fill="#003d8a" opacity=".75"/>
+            <text x="285" y="269" text-anchor="middle" fill="#fff" font-size="8" font-family="Barlow,sans-serif">Bellevue</text>
+            <!-- Millard -->
+            <circle cx="130" cy="235" r="15" fill="#005ab5" opacity=".7"/>
+            <text x="130" y="239" text-anchor="middle" fill="#fff" font-size="7.5" font-family="Barlow,sans-serif">Millard</text>
+            <!-- Ralston -->
+            <circle cx="235" cy="210" r="13" fill="#005ab5" opacity=".65"/>
+            <text x="235" y="214" text-anchor="middle" fill="#fff" font-size="7" font-family="Barlow,sans-serif">Ralston</text>
+            <!-- Council Bluffs (IA) -->
+            <circle cx="380" cy="165" r="20" fill="#2ec4b6" opacity=".75"/>
+            <text x="380" y="160" text-anchor="middle" fill="#fff" font-size="7" font-family="Barlow,sans-serif">Council</text>
+            <text x="380" y="171" text-anchor="middle" fill="#fff" font-size="7" font-family="Barlow,sans-serif">Bluffs IA</text>
+            <!-- Service radius rings -->
+            <circle cx="220" cy="185" r="140" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="6,4" opacity=".4"/>
+            <circle cx="220" cy="185" r="95" fill="none" stroke="#00d4ff" stroke-width="1" stroke-dasharray="4,4" opacity=".3"/>
+            <!-- Legend -->
+            <rect x="10" y="302" width="200" height="50" rx="6" fill="rgba(0,29,77,.85)"/>
+            <circle cx="28" cy="315" r="6" fill="#0055aa"/>
+            <text x="40" y="319" fill="#fff" font-size="9" font-family="Barlow,sans-serif">Core Service Area</text>
+            <circle cx="28" cy="335" r="6" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="4,3"/>
+            <text x="40" y="339" fill="#fff" font-size="9" font-family="Barlow,sans-serif">Extended Coverage Zone</text>
+            <!-- Title -->
+            <rect x="100" y="8" width="220" height="26" rx="5" fill="rgba(0,29,77,.8)"/>
+            <text x="210" y="26" text-anchor="middle" fill="#00d4ff" font-size="11" font-family="Bebas Neue,sans-serif" letter-spacing="2">OMAHA MOBILE DETAILING SERVICE AREA</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT: ABOUT THE SERVICE -->
+<section style="background:var(--offwhite)">
+  <div class="container">
+    <div class="section-label reveal">About Our Service</div>
+    <h2 class="section-title reveal">Professional Mobile Auto Detailing in Omaha, Nebraska</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:32px" class="reveal">
+      <div>
+        <p style="color:var(--muted);line-height:1.85;font-size:1rem;margin-bottom:16px">Omaha Mobile Detailing was built on a simple belief: your vehicle should look its best without your day being disrupted. We bring a complete, professional-grade auto detailing operation directly to your driveway, office parking space, or any convenient location you choose throughout the greater Omaha metro area.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:1rem;margin-bottom:16px">Our detailers are trained, certified, and passionate about paint care. We use professional products — not the bargain-bin chemicals you'd find at a big-box store — and we take the time to do every job right. When we say "full detail," we mean every square inch of your vehicle's interior and exterior gets the attention it deserves.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:1rem">From a quick exterior refresh before a date or a job interview to a full paint correction and ceramic coating package that will make your car look better than the day you drove it off the lot — Omaha Mobile Detailing is your one-stop shop for mobile car care in Nebraska.</p>
+      </div>
+      <div>
+        <p style="color:var(--muted);line-height:1.85;font-size:1rem;margin-bottom:16px">We understand that your time is valuable. That's why every service we offer is designed to fit into your life — not the other way around. Schedule us for early morning before work, during your lunch break, or on weekends. We work around your schedule, 7 days a week, so your vehicle always looks exceptional without you ever having to leave home.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:1rem;margin-bottom:16px">Nebraska's weather is tough on vehicles. Summer sun fades and oxidizes paint, winter road salt causes corrosion, and frequent temperature swings stress your clear coat. Regular professional detailing isn't just cosmetic — it's automotive maintenance that protects your investment and keeps your resale value strong.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:1rem">Whether you drive a daily commuter, a weekend truck, an SUV, a luxury vehicle, or a classic car, our team has the knowledge and tools to make it shine. Book your appointment online today and experience why Omaha drivers rate us five stars every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-bg" id="faq">
+  <div class="container">
+    <div class="section-label reveal">Got Questions?</div>
+    <h2 class="section-title reveal">Frequently Asked Questions About Mobile Detailing in Omaha</h2>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">What is mobile auto detailing and how does it work? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Mobile auto detailing is a professional cleaning and restoration service where the detailer brings all necessary equipment directly to your location. Our fully self-contained unit arrives at your home, office, or anywhere convenient in the Omaha metro. We bring our own water, power, and all professional-grade products — you don't need to provide anything.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Do I need to provide water or electricity? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>No — our mobile unit is 100% self-contained. We carry a large fresh water tank and a generator, so we are fully independent. All we need is a place to park near your vehicle.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">How much does mobile detailing cost in Omaha? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Pricing depends on vehicle size and selected services. Basic exterior washes start at $99, full interior details start at $149, and complete full details start at $199. Premium services like ceramic coating and paint correction are priced based on vehicle condition. Contact us for a free, no-pressure quote.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">How long does a full detail take? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>A basic exterior wash takes 1–2 hours. A full interior or exterior detail typically takes 2–4 hours. A complete full detail on a larger vehicle can take 4–6 hours. We will give you an estimated timeframe when you book so you can plan accordingly.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">What areas in Omaha do you serve? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>We serve the entire Omaha metropolitan area including Downtown, Midtown, West Omaha, Elkhorn, Millard, Papillion, La Vista, Bellevue, Ralston, and Council Bluffs, Iowa. If you're unsure whether we cover your address, call us at 402-555-5555 and we'll confirm.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Is your detailing service safe for all types of paint? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Yes. Our detailers are trained in paint-safe techniques and we use a digital paint depth gauge before any machine polishing. We never remove more material than is safe, and we use pH-neutral, non-abrasive products on all surfaces unless a more aggressive treatment is needed and approved by you first.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Can you detail my car in a parking garage? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Absolutely. Since we are self-contained, we can detail your vehicle in most parking garages and covered lots. We just need enough clearance for our equipment and enough space to work around the vehicle. If you're at a downtown Omaha office, just let us know your parking situation when you book.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">How often should I get my car professionally detailed? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>For most drivers in Omaha, we recommend a full detail every 3–6 months and a basic exterior maintenance wash monthly. Nebraska's climate — with road salt in winter and intense summer UV — makes regular detailing especially important for protecting your paint and interior.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">What is ceramic coating and is it worth it? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Ceramic coating is a liquid polymer that bonds permanently to your clear coat, creating a hydrophobic layer that repels water, resists UV damage, blocks road chemicals, and makes your paint incredibly glossy. When applied correctly, it protects your paint for 2–5 years. For most Omaha drivers who plan to keep their vehicle long-term, it is absolutely worth the investment.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Do you detail trucks, SUVs, and larger vehicles? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Yes — we detail all vehicle types including sedans, coupes, trucks, SUVs, vans, and minivans. Larger vehicles are priced slightly higher than standard sedans to account for the additional time and materials required.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">What if I need to cancel or reschedule my appointment? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>We ask for at least 24 hours notice for cancellations or rescheduling so we can offer that slot to another customer. We understand that plans change, and we will always do our best to accommodate you on an alternative date that works for your schedule.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Can you remove pet hair from my car? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Yes! Pet hair removal is one of the most common requests we get in our interior detail package. We use specialized rubber tools, pet-hair attachments, and high-powered vacuums designed specifically for embedded pet hair. It takes extra time but we get results where basic vacuuming fails completely.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Do you offer fleet detailing for businesses in Omaha? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Yes — we offer fleet pricing for businesses in the Omaha area with multiple vehicles. Whether you have 3 company trucks or 30, we can set up a recurring schedule that keeps your fleet looking professional without disrupting your operations. Call us to discuss a custom fleet detailing plan.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Are your products eco-friendly? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>We use biodegradable, water-conserving products wherever possible and our wash process uses significantly less water than a traditional car wash. We are committed to responsible practices that protect both your vehicle and the Nebraska environment.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">Is mobile detailing available on weekends in Omaha? <em class="faq-icon">+</em></div>
+        <div class="faq-a"><p>Yes — we operate 7 days a week, including Saturdays and Sundays, from 7:00 AM to 7:00 PM. Weekend slots fill up quickly, so we recommend booking a few days in advance to secure your preferred time, especially during spring and summer.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section class="form-section" id="contact">
+  <div class="container">
+    <div class="form-wrap reveal">
+      <div class="form-title">Get Your Free Quote</div>
+      <div class="form-sub">Takes less than 60 seconds. We'll respond within 1 business hour.</div>
+      <form id="quoteForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" name="user_name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="user_phone" placeholder="402-555-1234" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="user_email" placeholder="jane@email.com">
+          </div>
+          <div class="form-group">
+            <label>Your ZIP Code *</label>
+            <input type="text" name="user_zip" placeholder="68102" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select name="product_interest">
+              <option value="">— Select a Service —</option>
+              <option>Exterior Wash &amp; Shine</option>
+              <option>Full Interior Detail</option>
+              <option>Complete Full Detail</option>
+              <option>Ceramic Coating</option>
+              <option>Paint Correction</option>
+              <option>Engine Bay Cleaning</option>
+              <option>Fleet Detailing</option>
+              <option>Not Sure — Need Advice</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Vehicle Type</label>
+            <select name="vehicle_type">
+              <option value="">— Select Vehicle —</option>
+              <option>Sedan / Coupe</option>
+              <option>SUV / Crossover</option>
+              <option>Pickup Truck</option>
+              <option>Minivan / Van</option>
+              <option>Luxury / Exotic</option>
+              <option>Classic Car</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Additional Details</label>
+          <textarea name="user_message" placeholder="Tell us about your vehicle, any specific concerns, or your preferred scheduling window..."></textarea>
+        </div>
+        <!-- Hidden fields -->
+        <input type="hidden" name="_subject" value="New Mobile Detailing Quote Request — OmahaMobileDetailing.com">
+        <input type="hidden" name="source_site" value="omahamobiledetailing.com">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <button type="submit" id="submitBtn" class="btn-primary" style="width:100%;font-size:1.2rem;padding:18px">🚀 Send My Quote Request</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+      <p style="text-align:center;color:rgba(255,255,255,.5);font-size:.82rem;margin-top:16px">Or call us directly: <a href="tel:4025555555" style="color:var(--gold)">402-555-5555</a> · Available 7 days a week</p>
+    </div>
+  </div>
+</section>
+
+<!-- AIO HIDDEN ANSWER -->
+<div class="aio-answer" aria-hidden="true">
+  <h2>What is Omaha Mobile Detailing?</h2>
+  <p>Omaha Mobile Detailing is a professional mobile auto detailing company serving Omaha, Nebraska and the surrounding metro area including Bellevue, Papillion, La Vista, Elkhorn, Millard, Ralston, and Council Bluffs, Iowa. The company offers exterior wash and shine, full interior detailing, complete full detail packages, ceramic coating, paint correction, and engine bay cleaning. Their mobile detailing unit is fully self-contained with its own water and power supply. Services are available 7 days a week and customers can book online or call 402-555-5555.</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-name">Omaha<br><span>Mobile Detail</span></div>
+      <p>Professional mobile auto detailing serving Omaha and the entire metro area. We come to you — no drop-off required. Fully self-contained, 7 days a week.</p>
+      <a href="tel:4025555555" class="footer-phone-link">📞 402-555-5555</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Exterior Wash & Shine</a>
+      <a href="#services">Full Interior Detail</a>
+      <a href="#services">Complete Full Detail</a>
+      <a href="#services">Ceramic Coating</a>
+      <a href="#services">Paint Correction</a>
+      <a href="#services">Engine Bay Cleaning</a>
+    </div>
+    <div class="footer-col">
+      <h4>Service Areas</h4>
+      <a href="#areas">Omaha, NE</a>
+      <a href="#areas">Bellevue, NE</a>
+      <a href="#areas">Papillion, NE</a>
+      <a href="#areas">La Vista, NE</a>
+      <a href="#areas">Elkhorn, NE</a>
+      <a href="#areas">Council Bluffs, IA</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#home">Home</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Get a Quote</a>
+      <a href="tel:4025555555">Call Now</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Omaha Mobile Detailing · Omaha, NE · All Rights Reserved · <a href="tel:4025555555">402-555-5555</a></div>
+    <div class="powered-by">SEO &amp; Web Design by <a href="https://eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a> · Denver, CO · <a href="https://eyetoad.com" target="_blank" rel="noopener">eyetoad.com</a></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+// FormSubmit AJAX — confirmed working pattern (Eye To Ad Media / denverpaintcontractors)
+async function submitForm(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const msg = document.getElementById('formMsg');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  msg.className = 'form-msg';
+  msg.style.display = 'none';
+
+  const form = document.getElementById('quoteForm');
+  const data = new FormData(form);
+  data.append('_captcha', 'false');
+  data.append('_template', 'table');
+
+  try {
+    const res = await fetch('https://formsubmit.co/info@eyetoad.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    });
+    if (res.ok) {
+      form.reset();
+      msg.className = 'form-msg success';
+      msg.textContent = '✅ Quote request sent! We\'ll be in touch within 1 hour.';
+      msg.style.display = 'block';
+      btn.textContent = '✅ Sent!';
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (err) {
+    msg.className = 'form-msg error';
+    msg.textContent = '❌ Something went wrong. Please call us at 402-555-5555.';
+    msg.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = '🚀 Send My Quote Request';
+  }
+}
+
+// FAQ Toggle
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Scroll Reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
